@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income Expense Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Income & Expense Tracker</h1>
+
+    <!-- Totals -->
+    <div class="totals">
+      <div class="card income">
+        <h3>Income</h3>
+        <p id="total-income">₹0</p>
+      </div>
+      <div class="card expense">
+        <h3>Expense</h3>
+        <p id="total-expense">₹0</p>
+      </div>
+      <div class="card balance">
+        <h3>Balance</h3>
+        <p id="balance">₹0</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form id="entry-form">
+      <input type="text" id="desc" placeholder="Description" required>
+      <input type="number" id="amount" placeholder="Amount" required>
+      <input type="date" id="date" required>
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit" id="submit-btn">Add</button>
+      <button type="button" id="reset-btn">Reset</button>
+    </form>
+
+    <!-- Filters -->
+    <div class="filters">
+      <label><input type="radio" name="filter" value="all" checked> All</label>
+      <label><input type="radio" name="filter" value="income"> Income</label>
+      <label><input type="radio" name="filter" value="expense"> Expense</label>
+    </div>
+
+    <!-- List -->
+    <div class="history">
+      <h3>Transaction History</h3>
+      <ul id="recordList"></ul>
+    </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
