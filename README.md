@@ -1,4 +1,4 @@
-# 💰 Income Expense Calculator with Calendar
+# 💰 Income Expense Calculator
 
 A **fully functional Income Expense Calculator** built using **HTML, CSS, and JavaScript**.  
 This app allows users to **track their income and expenses**, manage financial records with **CRUD operations**, and view their data in an intuitive interface with a built-in **calendar** for date-based tracking.
